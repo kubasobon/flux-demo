@@ -1,0 +1,4 @@
+resources:
+- organization-cr.yaml
+commonLabels:
+  flux-demo: "yes"
