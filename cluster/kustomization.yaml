@@ -1,4 +1,4 @@
-resources:
+patchesStrategicMerge:
 - cluster-crs.yaml
 commonLabels:
   flux-demo: "yes"

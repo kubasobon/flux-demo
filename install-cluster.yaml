@@ -6,7 +6,7 @@ metadata:
   labels:
     flux-demo: "yes"
 spec:
-  interval: 5m0s
+  interval: 10s
   path: ./cluster
   prune: true
   sourceRef:
