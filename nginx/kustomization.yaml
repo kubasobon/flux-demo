@@ -1,0 +1,4 @@
+resources:
+- nginx.yaml
+commonLabels:
+  flux-demo: "yes"
