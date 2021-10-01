@@ -3,6 +3,8 @@ kind: Kustomization
 metadata:
   name: install-cluster
   namespace: flux-system
+  labels:
+    flux-demo: "yes"
 spec:
   interval: 5m0s
   path: ./cluster
