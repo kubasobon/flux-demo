@@ -1,4 +1,5 @@
 resources:
 - organization-cr.yaml
+- org2.yaml
 commonLabels:
   flux-demo: "yes"
