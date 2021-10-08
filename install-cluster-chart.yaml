@@ -4,7 +4,7 @@ metadata:
   name: install-cluster-chart
   namespace: flux-system
 spec:
-  interval: 5m
+  interval: 10s
   chart:
     spec:
       chart: "./cluster-chart"
