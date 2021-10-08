@@ -15,7 +15,7 @@ metadata:
     giantswarm.io/organization: {{ .Values.organization }}
     release.giantswarm.io/version: ""
   name: {{ .Values.clusterid }}
-  namespace: default
+  namespace: {{ .Values.namespace }}
 spec:
   controlPlaneEndpoint:
     host: ""
@@ -24,7 +24,7 @@ spec:
     apiVersion: infrastructure.giantswarm.io/v1alpha3
     kind: AWSCluster
     name: {{ .Values.clusterid }}
-    namespace: default
+    namespace: {{ .Values.namespace }}
 status:
   controlPlaneInitialized: false
   infrastructureReady: false
@@ -42,7 +42,7 @@ metadata:
     giantswarm.io/organization: {{ .Values.organization }}
     release.giantswarm.io/version: ""
   name: {{ .Values.clusterid }}
-  namespace: default
+  namespace: {{ .Values.namespace }}
 spec:
   cluster:
     description: {{ .Values.description }}
@@ -80,13 +80,13 @@ metadata:
     giantswarm.io/organization: {{ .Values.organization }}
     release.giantswarm.io/version: ""
   name: {{ .Values.controlplaneid }}
-  namespace: default
+  namespace: {{ .Values.namespace }}
 spec:
   infrastructureRef:
     apiVersion: infrastructure.giantswarm.io/v1alpha3
     kind: AWSControlPlane
     name: {{ .Values.controlplaneid }}
-    namespace: default
+    namespace: {{ .Values.namespace }}
 status: {}
 ---
 apiVersion: infrastructure.giantswarm.io/v1alpha3
@@ -102,7 +102,7 @@ metadata:
     giantswarm.io/organization: {{ .Values.organization }}
     release.giantswarm.io/version: ""
   name: {{ .Values.controlplaneid }}
-  namespace: default
+  namespace: {{ .Values.namespace }}
 spec:
   instanceType: m5.xlarge
 

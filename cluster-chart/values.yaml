@@ -1,4 +1,5 @@
 clusterid: kuba0
 organization: flux-demo
+namespace: org-flux-demo
 controlplaneid: xm3r9
 description: kuba-flux-demo
