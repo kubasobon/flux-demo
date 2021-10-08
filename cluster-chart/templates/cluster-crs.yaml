@@ -7,6 +7,7 @@ kind: Cluster
 metadata:
   annotations:
     giantswarm.io/docs: https://docs.giantswarm.io/ui-api/management-api/crd/clusters.cluster.x-k8s.io/
+    helm.sh/hook-weight: "1"
   creationTimestamp: null
   labels:
     cluster-operator.giantswarm.io/version: ""
