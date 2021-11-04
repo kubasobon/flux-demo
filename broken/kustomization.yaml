@@ -1,0 +1,4 @@
+resources:
+- broken-deployment.yaml
+commonLabels:
+  flux-demo: "yes"
