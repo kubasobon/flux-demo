@@ -1,10 +1,10 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: flux-demo
+  name: flux-demo-broken
   namespace: flux-system
 spec:
   interval: 30s
   ref:
-    branch: master
+    branch: broken
   url: https://github.com/kubasobon/flux-demo
