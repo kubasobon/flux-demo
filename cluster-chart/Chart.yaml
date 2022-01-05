@@ -1,5 +1,0 @@
-apiVersion: v1
-name: flux-demo-cluster
-home: https://github.com/kubasobon/flux-demo
-description: ""
-version: v1.0.0

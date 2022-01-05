@@ -1,4 +1,0 @@
-resources:
-- cluster-crs.yaml
-commonLabels:
-  flux-demo: "yes"

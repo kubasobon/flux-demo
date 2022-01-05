@@ -1,5 +1,0 @@
-resources:
-- namespace.yaml
-- app-cr.yaml
-commonLabels:
-  flux-demo: "yes"
