@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: flux-message
+data:
+  msg: |
+    The fact that you are reading this means that Flux did its job. The
+    kustomization.yaml was not necessary and it generated one on the go. Nice.

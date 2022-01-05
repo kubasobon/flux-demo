@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: flux-demo
+spec:
+  interval: 10s
+  ref:
+    branch: empty-dir
+  url: https://github.com/kubasobon/flux-demo
+
