@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: flux-sub-message
+  namespace: default
+spec:
+  broken: yes

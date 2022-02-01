@@ -1,0 +1,12 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: flux-demo-sub
+spec:
+  interval: 10s
+  path: ./submanifests
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-demo
+
